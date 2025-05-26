@@ -6,32 +6,32 @@ const Works = () => {
   const scrollRef = useRef(null);
 
   const apps = [
-    {
-      title: "3D Magic UI",
-      description: "Hover to experience 3D effects like never before.",
-      imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=2560",
-      link: "https://example.com/magic",
-    },
-    {
-      title: "Smooth Animations",
-      description: "CSS + JS = smooth, immersive animations.",
-      imageUrl: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=2560",
-      link: "https://example.com/animations",
-    },
-    {
-      title: "Responsive Design",
-      description: "Fully responsive and interactive 3D cards.",
-      imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=2560",
-      link: "https://example.com/responsive",
-    },
-    {
-        title: "Responsive Design",
-        description: "Fully responsive and interactive 3D cards.",
-        imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=2560",
-        link: "https://example.com/responsive",
+      {
+        title: "AI-Powered Automation",
+        description: "Streamline your business with intelligent automation.",
+        imageUrl: "https://media.slidesgo.com/storage/44761196/conversions/0-artificial-intelligence-ai-technology-project-proposal-thumb.jpg",
+        link: "",
       },
-  ];
-
+      {
+        title: "Smart Recommendation Systems",
+        description: "DeliverML-based recommendation engines.",
+        imageUrl: "https://flyaps.com/blog/content/images/size/w960/2024/12/AI-Software-Development.png",
+        link: "",
+      },
+      {
+        title: "Real-Time AI Analytics",
+        description: "Make data-driven  insights powered by AI.",
+        imageUrl: "https://img.freepik.com/free-vector/explore-future-seo-landing-page-template_23-2148929032.jpg?semt=ais_hybrid&w=740",
+        link: "",
+      },
+      {
+        title: "Custom AI Solutions",
+        description: "We build scalable, exact business needs.",
+        imageUrl: "https://img.freepik.com/free-vector/robot-winning-golden-cup_74855-7154.jpg?semt=ais_hybrid&w=740",
+        link: "",
+      }
+    ]
+    
   const scroll = (direction) => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({ left: direction === "left" ? -380 : 380, behavior: "smooth" });
@@ -39,7 +39,7 @@ const Works = () => {
   };
 
   return (
-    <section className='c-space relative  mt-0 '>
+    <section className='c-space mt-10 relative  mt-0 '>
        <h2 className='text-heading'>My Work</h2>
       <button
         onClick={() => scroll("left")}
