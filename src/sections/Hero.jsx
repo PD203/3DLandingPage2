@@ -8,10 +8,10 @@ import { useMediaQuery } from 'react-responsive'
 import { easing } from 'maath'
 import Loader from '../components/Loader'
 
-const Hero = () => {
+const Hero = ({id}) => {
   const isMobile = useMediaQuery({ maxWidth: 853})
   return (
-    <section className='flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space'>
+    <section id={id} className='flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space'>
         <HeroText/>
         <ParallaxBg/>
         <figure className='absolute inset-0 ' style={{width: "100vw", height: "100vh"}}>

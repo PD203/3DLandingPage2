@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FlipWords } from './FlipWords';
 
 const HeroText = () => {
-    const words = ["Discover", "Build", "Innovate"];
+    const words = ["Live", "Raw", "Real"];
     const variants = {
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 },
@@ -21,7 +21,7 @@ const HeroText = () => {
                     animate="visible"
                     transition={{ delay: 1 }}
                 >
-                    AI DRIVEN SOLUTIONS
+                    BEYOND EARTH
                 </motion.h1>
                 <FlipWords
                             words={words}
@@ -35,7 +35,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.2 }}
                     >
-                        transform your challenges 
+                        Unveiling the universe with 
                     </motion.p>
                     <motion.div
                         variants={variants}
@@ -52,7 +52,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        into opportunities with
+                        real-time data and
                     </motion.p>
                     <motion.p
                         className="text-4xl font-medium text-neutral-300"
@@ -61,7 +61,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        cuttung-edge innovation.
+                        imagery from NASA.
                     </motion.p>
                 </div>
             </div>
@@ -74,7 +74,7 @@ const HeroText = () => {
                     animate="visible"
                     transition={{ delay: 1 }}
                 >
-                   AI DRIVEN SOLUTIONS
+                  BEYOND EARTH
                 </motion.p>
                 <FlipWords
                             words={words}
@@ -88,7 +88,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.2 }}
                     >
-                        transform your challenges
+                        Unveiling the universe with 
                     </motion.p>
                     <motion.div
                         variants={variants}
@@ -105,7 +105,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        into opportunities with
+                        real-time data and
                     </motion.p>
                     <motion.p
                         className="text-1xl font-black text-neutral300"
@@ -114,7 +114,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        cuttung-edge innovation.
+                        imagery from NASA.
                     </motion.p>
                 </div>
             </div>

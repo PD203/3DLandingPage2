@@ -8,12 +8,12 @@ import { Globe } from '../components/Globe'
 import CopyEmailButton from '../components/CopyEmailButton'
 import { Frameworks } from '../components/Frameworks'
 
-const About = () => {
+const About = ({ id }) => {
   const grid2Container = useRef();
 
   return (
-    <section className='c-space section-spacing'>
-      <h2 className='text-heading'>About me</h2>
+    <section id={id} className='c-space section-spacing'>
+      <h2 className='text-heading'>About</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
         <div className="relative flex flex-col items-center text-center grid-default-color grid-1 p-4">
@@ -23,9 +23,9 @@ const About = () => {
             alt="WASP AI Visual"
           />
           <div className="absolute bottom-0 left-0 right-0 z-10 flex flex-col items-center justify-end gap-4 p-4 bg-gradient-to-t from-black/70 to-transparent">
-            <p className="headtext text-white">Hi, We’re WASP</p>
+            <p className="headtext text-white">Welcome to SpaceScope</p>
             <p className="subtext text-white text-center">
-              We specialize in delivering cutting-edge AI solutions that transform industries. With a focus on performance and scalability, we build intelligent systems that empower businesses worldwide.
+              Explore the cosmos like never before. Powered by NASA’s API, we bring you real-time images, space missions, and cosmic insights—straight from the source.
             </p>
           </div>
         </div>
@@ -37,31 +37,31 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <p className="flex items-end text-5xl text-gray-500">
-              WHERE AI MEETS INGENUITY
+              YOUR WINDOW TO THE COSMOS
             </p>
-            <Card
+            {/* <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
               text="AI First"
               containerRef={grid2Container}
-            />
+            /> */}
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text=" Automation Ready"
+              text=" Daily Space Imagery"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Secure by Design"
+              text="Authentic Mission Logs"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Scalable Systems"
+              text="Astronomy Updates"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Human-Centric Interfaces"
+              text="Explore the Universe"
               containerRef={grid2Container}
             />
             {/* <Card
@@ -81,12 +81,13 @@ const About = () => {
             /> */}
           </div>
         </div>
+
         {/* Grid 3 */}
         <div className="grid-black-color grid-3">
           <div className="z-10 w-[50%]">
-            <p className="headtext">Global Reach</p>
+            <p className="headtext">Universal Access</p>
             <p className="subtext">
-              We operate across 56 countries with 30M+ users, offering AI services tailored to regional needs—no matter where you are.
+              Explore space from anywhere on Earth. Our platform streams real-time NASA data, imagery, and updates—bringing the cosmos closer to you.
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -97,17 +98,18 @@ const About = () => {
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext">
-              Have a Project in Mind?
+            Curious about the universe? Get in touch!
             </p>
             <CopyEmailButton />
           </div>
         </div>
+
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Our Tech Ecosystem</p>
+            <p className="headText">Unveiling the universe</p>
             <p className="subtext">
-              We build using the best tools in AI, cloud computing, and automation. From Python and TensorFlow to Kubernetes and custom ML pipelines—we innovate at scale.
+            We harness NASA’s Open API to deliver the latest space images, mission logs, and cosmic events—all in one place.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
