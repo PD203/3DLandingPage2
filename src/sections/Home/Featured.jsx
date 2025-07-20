@@ -13,7 +13,7 @@ export default function Featured() {
             Journey to the Stars
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            Embark on a virtual journey through the cosmos with our interactive 3D models. Explore spacecraft, celestial bodies, and the vast expanse of space. Explore spacecraft, celestial bodies, and the vast expanse of space.
+            Embark on a virtual journey through the cosmos. Explore spacecraft, celestial bodies, and the vast expanse of space. Explore spacecraft, celestial bodies, and the vast expanse of space.
           </p>
           <button className="bg-white hover:bg-amber-50 text-black px-6 py-2 rounded-lg">
             Explore Now
