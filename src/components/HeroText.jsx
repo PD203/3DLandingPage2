@@ -35,7 +35,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.2 }}
                     >
-                        Unveiling the universe with 
+                        Discover the wonders  
                     </motion.p>
                     <motion.div
                         variants={variants}
@@ -52,7 +52,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        real-time data and
+                        of space exploration
                     </motion.p>
                     <motion.p
                         className="text-4xl font-medium text-neutral-300"
@@ -61,7 +61,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        imagery from NASA.
+                        and research.
                     </motion.p>
                 </div>
             </div>
@@ -88,7 +88,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.2 }}
                     >
-                        Unveiling the universe with 
+                        Discover the wonders 
                     </motion.p>
                     <motion.div
                         variants={variants}
@@ -105,7 +105,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        real-time data and
+                       of space exploration
                     </motion.p>
                     <motion.p
                         className="text-1xl font-black text-neutral300"
@@ -114,7 +114,7 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.8 }}
                     >
-                        imagery from NASA.
+                        and research.
                     </motion.p>
                 </div>
             </div>

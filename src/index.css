@@ -158,4 +158,5 @@ html {
 * {
   scrollbar-width: none;
   -ms-overflow-style: none; 
+  /* color: #353965; */
 }
