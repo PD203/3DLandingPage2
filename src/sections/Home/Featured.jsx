@@ -20,7 +20,7 @@ export default function Featured() {
           </button>
         </div>
 
-        <div className="flex-1 w-full  flex justify-center items-center ">
+        <div className="flex-[1.5] w-full  flex justify-center items-center ">
           <SplineScene />
         </div>
       </div>
