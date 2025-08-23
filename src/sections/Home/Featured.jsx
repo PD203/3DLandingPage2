@@ -1,9 +1,14 @@
 'use client';
 import { Suspense, lazy } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const SplineScene = lazy(() => import("../../components/SplineScene"));
 
 export default function Featured() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1024px)'
+  });
+
   return (
     <div className="c-space my-20">
       <h2 className='text-heading'>Featured</h2>
@@ -22,9 +27,15 @@ export default function Featured() {
         </div>
 
         <div className="flex-[1.5] w-full flex justify-center items-center">
-          <Suspense fallback={<div className="text-gray-500">Loading 3D...</div>}>
-            <SplineScene />
-          </Suspense>
+          {isDesktopOrLaptop ? (
+            <Suspense fallback={<div className="text-gray-500">Loading 3D...</div>}>
+              <SplineScene />
+            </Suspense>
+          ) : (
+            <div className="text-gray-500">
+              3D view is available on desktop for a better experience.
+            </div>
+          )}
         </div>
       </div>
     </div>
