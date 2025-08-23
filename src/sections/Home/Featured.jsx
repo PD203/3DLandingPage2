@@ -1,7 +1,7 @@
 'use client';
 import { Suspense, lazy } from "react";
 import { useMediaQuery } from "react-responsive";
-import gameEngine from "../../assets/projects/game-engine.jpg";
+import gameEngine from "../../assets/spline3D.jpg";
 
 const SplineScene = lazy(() => import("../../components/SplineScene"));
 
