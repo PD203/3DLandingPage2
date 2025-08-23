@@ -1,6 +1,7 @@
 'use client';
 import { Suspense, lazy } from "react";
 import { useMediaQuery } from "react-responsive";
+import gameEngine from "../../assets/projects/game-engine.jpg";
 
 const SplineScene = lazy(() => import("../../components/SplineScene"));
 
@@ -32,9 +33,7 @@ export default function Featured() {
               <SplineScene />
             </Suspense>
           ) : (
-            <div className="text-gray-500">
-              3D view is available on desktop for a better experience.
-            </div>
+            <img src={gameEngine} alt="Preview of the 3D scene" className="w-full h-auto rounded-lg" />
           )}
         </div>
       </div>
